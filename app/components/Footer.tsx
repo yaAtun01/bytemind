@@ -4,9 +4,6 @@ interface FooterProps {
   uiLang: UiLang;
 }
 
-/**
- * Footer — Professional tech-startup footer for ByteMind.
- */
 export default function Footer({ uiLang }: FooterProps) {
   const year = new Date().getFullYear();
   const t = translations[uiLang].footer;
@@ -15,6 +12,12 @@ export default function Footer({ uiLang }: FooterProps) {
     { label: translations[uiLang].nav.home, href: "#hero" },
     { label: translations[uiLang].nav.workspace, href: "#workspace" },
     { label: translations[uiLang].nav.features, href: "#features" },
+  ];
+
+  const resources = [
+    { label: "Documentation", href: "https://github.com/yaAtun01/bytemind/blob/main/README.md" },
+    { label: "API Reference", href: "https://github.com/yaAtun01/bytemind/blob/main/server/server.js" },
+    { label: "GitHub", href: "https://github.com/yaAtun01/bytemind" },
   ];
 
   return (
@@ -26,7 +29,7 @@ export default function Footer({ uiLang }: FooterProps) {
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-8 h-8 rounded-lg bg-accent/15 flex items-center justify-center">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-accent">
-                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" opacity="0.85" />
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" opacity="0.85" />
                 </svg>
               </div>
               <span className="text-lg font-bold tracking-tight text-text-primary">
@@ -59,11 +62,16 @@ export default function Footer({ uiLang }: FooterProps) {
           <div>
             <h4 className="text-sm font-semibold text-text-primary mb-4">{t.resources}</h4>
             <ul className="space-y-2.5">
-              {["Documentation", "API Reference", "GitHub"].map((item) => (
-                <li key={item}>
-                  <span className="text-sm text-text-secondary hover:text-accent cursor-pointer transition-colors">
-                    {item}
-                  </span>
+              {resources.map((item) => (
+                <li key={item.label}>
+                  
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-text-secondary hover:text-accent transition-colors"
+                  >
+                    {item.label}
+                  </a>
                 </li>
               ))}
             </ul>
