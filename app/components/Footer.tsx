@@ -64,7 +64,7 @@ export default function Footer({ uiLang }: FooterProps) {
             <ul className="space-y-2.5">
               {resources.map((item) => (
                 <li key={item.label}>
-                  
+                  <a
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
