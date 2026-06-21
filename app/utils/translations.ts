@@ -48,6 +48,17 @@ export const translations = {
         { title: "Copy & Share", desc: "One-click copy. Paste explanations into your notes or share with friends." }
       ]
     },
+    codeExplainer: {
+      title: "Line-by-Line ",
+      titleAccent: "Explainer",
+      desc: "Paste any code and see each line explained in plain language — great for reading unfamiliar code.",
+      placeholder: "// Paste your code here to explain it line by line...",
+      explainBtn: "Explain",
+      emptyError: "Please paste some code first.",
+      lineCol: "Code",
+      explanationCol: "Explanation",
+      lineLabel: "Line",
+    },
     footer: {
       desc: "AI-powered code explainer that helps beginners understand programming concepts with clear, step-by-step explanations.",
       quote: "“Understand Code Smarter”",
@@ -103,6 +114,17 @@ export const translations = {
         { title: "Ramah Pemula", desc: "Ditulis dengan bahasa yang sederhana. Tanpa istilah rumit, tanpa kebingungan — hanya kejelasan." },
         { title: "Salin & Bagikan", desc: "Salin dengan satu klik. Tempel penjelasan ke catatan Anda atau bagikan dengan teman." }
       ]
+    },
+    codeExplainer: {
+      title: "Penjelasan ",
+      titleAccent: "Per Baris",
+      desc: "Tempel kode apa pun dan lihat setiap barisnya dijelaskan dalam bahasa yang mudah dipahami — cocok untuk membaca kode baru.",
+      placeholder: "// Tempel kode Anda di sini untuk dijelaskan baris per baris...",
+      explainBtn: "Jelaskan",
+      emptyError: "Silakan tempel kode Anda terlebih dahulu.",
+      lineCol: "Kode",
+      explanationCol: "Penjelasan",
+      lineLabel: "Baris",
     },
     footer: {
       desc: "Penjelas kode berbasis AI yang membantu pemula memahami konsep pemrograman dengan penjelasan langkah demi langkah yang jelas.",
