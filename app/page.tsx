@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Workspace from "./components/Workspace";
+import CodeExplainer from "./components/CodeExplainer";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 import { UiLang } from "./utils/translations";
@@ -33,6 +34,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero uiLang={uiLang} />
         <Workspace uiLang={uiLang} />
+        <CodeExplainer uiLang={uiLang} />
         <Features uiLang={uiLang} />
       </main>
       <Footer uiLang={uiLang} />
